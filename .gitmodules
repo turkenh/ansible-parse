@@ -1,0 +1,12 @@
+[submodule "roles/nonroot-sudo"]
+	path = roles/nonroot-sudo
+	url = https://github.com/turkenh/ansible-role-nonroot-sudo.git
+[submodule "roles/parse-dashboard"]
+	path = roles/parse-dashboard
+	url = https://github.com/turkenh/ansible-role-parse-dashboard.git
+[submodule "roles/parse-server"]
+	path = roles/parse-server
+	url = https://github.com/turkenh/ansible-role-parse-server.git
+[submodule "roles/parse-mongodb"]
+	path = roles/parse-mongodb
+	url = https://github.com/turkenh/ansible-role-parse-mongodb.git
