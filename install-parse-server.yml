@@ -1,0 +1,5 @@
+---
+- hosts: parse-server
+  become: yes
+  roles:
+    - parse-server

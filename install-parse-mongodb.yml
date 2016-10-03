@@ -1,0 +1,5 @@
+---
+- hosts: mongodb-server
+  become: yes
+  roles:
+    - parse-mongodb

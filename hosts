@@ -1,0 +1,15 @@
+[workstation]
+localhost ansible_connection=local
+
+[nodes:children]
+parse-server
+mongodb-server
+
+[mongodb-server]
+45.55.94.172
+
+[parse-server]
+45.55.94.172
+
+[parse-dashboard]
+45.55.94.172

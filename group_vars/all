@@ -1,0 +1,27 @@
+nonroot_sudo_username: ht
+
+ansible_user: ht
+ansible_sudo_pass: changethis
+
+parse_application_id: kHezobPrpVcld9c9kdoJsYvU6zbv5o7iQAHIL1KP
+parse_master_key: VY3ul4os4JGDAJhRqhxCuoFly0dBHFlfnGvvKOt6
+parse_domain: api.easytipscollection.com
+parse_email_for_certificate: turkenh@gmail.com
+
+parse_mongodb_email_for_certificate: "{{parse_email_for_certificate}}"
+parse_mongodb_domain: "{{parse_domain}}"
+parse_mongodb_admin_user: ht
+parse_mongodb_admin_password: maka
+parse_mongodb_database_name: myGame
+parse_mongodb_parse_password: pass4parse
+
+parse_server_application_id: "{{parse_application_id}}"
+parse_server_master_key: "{{parse_master_key}}"
+#parse_server_mongodb_database_uri: mongodb://parse:pass4parse@api.easytipscollection.com:27017/myGame?ssl=true
+parse_server_domain: "{{parse_domain}}"
+parse_server_email_for_certificate: "{{parse_email_for_certificate}}"
+
+parse_dashboard_server_url: https://{{parse_domain}}/parse
+parse_dashboard_application_name: pbk
+parse_dashboard_application_id: "{{parse_application_id}}"
+parse_dashboard_master_key: "{{parse_master_key}}"

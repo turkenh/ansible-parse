@@ -1,0 +1,6 @@
+---
+- hosts: nodes
+  roles:
+    - nonroot-sudo
+  vars:
+    ansible_user: root

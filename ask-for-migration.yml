@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: False 
+  tasks:
+    - name: Ask for migration
+      pause: 
+        prompt: | 
+          "If you want to migrate an existing database, please finalize/verify migration now using the MongoDB connection string above!!!
+          Once you are ready press "enter" to continue..."

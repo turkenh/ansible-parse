@@ -1,0 +1,6 @@
+---
+- include: add-nonroot-sudo-user.yml
+- include: install-parse-mongodb.yml
+- include: ask-for-migration.yml
+- include: install-parse-server.yml
+- include: install-parse-dashboard.yml

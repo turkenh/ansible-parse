@@ -1,0 +1,5 @@
+---
+- hosts: parse-dashboard
+  become: yes
+  roles:
+    - parse-dashboard
