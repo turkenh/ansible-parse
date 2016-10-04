@@ -1,13 +1,21 @@
 # ansible-parse
 Ansible scripts for end to end setup of a parse server also ready for migration and production
 
-The scripts here follows the steps in [How To Host Parse Server tutorial series][1]   by Brennen Bearnes from DigitalOcean Community.
+The scripts here follow the steps in [How To Host Parse Server tutorial series][1] by Brennen Bearnes from DigitalOcean Community.
 
-# How to install Ansible 
+## How to install Ansible 
 
 It is easy! Check this page: http://ansible-tips-and-tricks.readthedocs.io/en/latest/ansible/install/
 
-Tested with Ansible version 2.1.1
+Tested with Ansible version 2.1.1. So it is recommended!
+
+## Sign up DigitalOcean
+
+The scripts have no dependency on DigitalOcean, you can use any cloud provider. 
+
+But DigitalOcean is a good choice. 
+
+If you do not have an account, you can register with my [referal link][2] and start with a $10 credit.
 
 # Steps
 
@@ -50,3 +58,4 @@ Go to \<your_domain_name\>:4040 and enter "admin/admin" (unless you changed it w
 ![Step 6 - Verify Installation & Data ](docs/verify.gif?raw=true "")
 
 [1]: https://www.digitalocean.com/community/tutorial_series/how-to-host-parse-server
+[2]: https://m.do.co/c/d7c767109085
