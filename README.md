@@ -13,7 +13,7 @@ Tested with Ansible version 2.1.1. So it is recommended!
 
 The scripts have no dependency on DigitalOcean, you can use any cloud provider. 
 
-But DigitalOcean is a good choice. 
+But DigitalOcean is a great choice for developers, like us!
 
 If you do not have an account, you can register with my [referal link][2] and start with a $10 credit.
 
