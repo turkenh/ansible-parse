@@ -3,6 +3,12 @@ Ansible scripts for end to end setup of a parse server also ready for migration 
 
 The scripts here follows the steps in [How To Host Parse Server tutorial series][1]   by Brennen Bearnes from DigitalOcean Community.
 
+# How to install Ansible 
+
+It is easy! Check this page: http://ansible-tips-and-tricks.readthedocs.io/en/latest/ansible/install/
+
+Tested with Ansible version 2.1.1
+
 # Steps
 
 ## Step 1 - Create Instance 
