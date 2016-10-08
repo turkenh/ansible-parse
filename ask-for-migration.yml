@@ -5,5 +5,7 @@
     - name: Ask for migration
       pause: 
         prompt: | 
-          "If you want to migrate an existing database, please finalize/verify migration now using the MongoDB connection string above!!!
+          "If you want to migrate an existing database, please start migration now using the MongoDB connection string above!!!
+          You can verify your database over parse-dashboard once installation completes. Then you can finalize migration.
+          If you don't mind migration and trying to setup for a new app, just continue!
           Once you are ready press "enter" to continue..."
