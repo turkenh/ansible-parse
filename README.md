@@ -3,13 +3,25 @@ Ansible scripts for end to end setup of a parse server also ready for migration 
 
 The scripts here follow the steps in [How To Host Parse Server tutorial series][1] by Brennen Bearnes from DigitalOcean Community.
 
-## How to install Ansible 
+## What you get
+At the end you will get a server with the followings installed:
+  * TLS/SSL enabled Mongodb Server
+  * TLS/SSL enabled Parse Server
+  * Parse Dashboard
+
+## What you need
+Before starting you need:
+  * ansible installed workstation (i.e. your laptop)
+  * an Ubuntu14.04 server with root access (i.e. a droplet from Digital Ocean)
+  * A domain name pointing at the server
+
+### How to install Ansible 
 
 It is easy! Check this page: http://ansible-tips-and-tricks.readthedocs.io/en/latest/ansible/install/
 
 Tested with Ansible version 2.1.1. So it is recommended!
 
-## Sign up DigitalOcean
+### Sign up DigitalOcean
 
 The scripts have no dependency on DigitalOcean, you can use any cloud provider. 
 
