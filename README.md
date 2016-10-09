@@ -70,4 +70,4 @@ Go to \<your_domain_name\>:4040 and enter "admin/admin" (unless you changed it w
 ![Step 6 - Verify Installation & Data ](docs/verify.gif?raw=true "")
 
 [1]: https://www.digitalocean.com/community/tutorial_series/how-to-host-parse-server
-[2]: https://m.do.co/c/d7c767109085
+[2]: https://m.do.co/c/9bb7ed4991c1
