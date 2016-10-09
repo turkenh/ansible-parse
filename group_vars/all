@@ -1,27 +1,38 @@
-nonroot_sudo_username: ht
-
 ansible_user: ht
+# when you change this password, please change nonroot_sudo_user_crypted_password accordingly
+by following http://docs.ansible.com/ansible/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module
 ansible_sudo_pass: changethis
 
-parse_application_id: kHezobPrpVcld9c9kdoJsYvU6zbv5o7iQAHIL1KP
-parse_master_key: VY3ul4os4JGDAJhRqhxCuoFly0dBHFlfnGvvKOt6
-parse_domain: api.easytipscollection.com
-parse_email_for_certificate: turkenh@gmail.com
+parse_application_id: your_parse_app_id_here
+parse_master_key: your_parse_app_master_key_here
+parse_domain: yourdomain.com
+parse_email_for_certificate: yourmail@mail.com
 
+### nonroot sude parameters
+nonroot_sudo_username: "{{ansible_user}}"
+nonroot_sudo_user_crypted_password: "$6$NiX9iAyw$H0b2AZbTJ0VRyepg8EAshCTeCk4RbYyHgbnlIeKfW95pHNFtudcND9li9Jkcq56s2WSEH4mtgCO4JDhIDUGMR/"
+
+### mongodb parameters
 parse_mongodb_email_for_certificate: "{{parse_email_for_certificate}}"
 parse_mongodb_domain: "{{parse_domain}}"
-parse_mongodb_admin_user: ht
-parse_mongodb_admin_password: maka
-parse_mongodb_database_name: myGame
-parse_mongodb_parse_password: pass4parse
+parse_mongodb_admin_user: mongoadmin
+parse_mongodb_admin_password: pass4mongo
+parse_mongodb_database_name: myappdb
+parse_mongodb_parse_password: pass4myappdb
 
+### parse_server paramaters ###
 parse_server_application_id: "{{parse_application_id}}"
 parse_server_master_key: "{{parse_master_key}}"
-#parse_server_mongodb_database_uri: mongodb://parse:pass4parse@api.easytipscollection.com:27017/myGame?ssl=true
+# parse_server_mongogb_database_uri will be set by mongodb role if you run them together. So you do not need to set this manually unless you run seperately.
+#parse_server_mongodb_database_uri: mongodb://parse:pass4parse@yourdomain.com:27017/myappdb?ssl=true
 parse_server_domain: "{{parse_domain}}"
 parse_server_email_for_certificate: "{{parse_email_for_certificate}}"
 
+### parse_dashboard parameters ###
 parse_dashboard_server_url: https://{{parse_domain}}/parse
-parse_dashboard_application_name: pbk
 parse_dashboard_application_id: "{{parse_application_id}}"
 parse_dashboard_master_key: "{{parse_master_key}}"
+parse_dashboard_user_crypted_password: "$6$2UrAlvH3qvw.DnvS$RS78XV5lHjTnqMbbzblxZdmaV5PtylOygrAiNEvvhXwPzJSnBIDlDCmxz.FiFiIYGxFpUaYhREJvdVGtuvtU81"
+parse_dashboard_user: admin
+parse_dashboard_password: admin
+parse_dashboard_application_name: myApp

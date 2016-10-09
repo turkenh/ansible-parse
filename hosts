@@ -6,10 +6,10 @@ parse-server
 mongodb-server
 
 [mongodb-server]
-45.55.94.172
+123.123.123.123
 
 [parse-server]
-45.55.94.172
+123.123.123.123
 
 [parse-dashboard]
-45.55.94.172
+123.123.123.123
