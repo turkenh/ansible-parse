@@ -1,4 +1,5 @@
-ansible_user: ht
+nonroot_user: ht
+ansible_user: "nonroot_user"
 # when you change this password, please change nonroot_sudo_user_crypted_password accordingly
 by following http://docs.ansible.com/ansible/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module
 ansible_sudo_pass: changethis
@@ -9,7 +10,7 @@ parse_domain: yourdomain.com
 parse_email_for_certificate: yourmail@mail.com
 
 ### nonroot sude parameters
-nonroot_sudo_username: "{{ansible_user}}"
+nonroot_sudo_username: "{{nonroot_user}}"
 nonroot_sudo_user_crypted_password: "$6$NiX9iAyw$H0b2AZbTJ0VRyepg8EAshCTeCk4RbYyHgbnlIeKfW95pHNFtudcND9li9Jkcq56s2WSEH4mtgCO4JDhIDUGMR/"
 
 ### mongodb parameters
