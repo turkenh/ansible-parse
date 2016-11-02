@@ -30,6 +30,27 @@ But DigitalOcean is a great choice for developers, like us!
 If you do not have an account, you can register with my [referal link][2] and start with a $10 credit.
 
 # Steps
+## Step 0 - Prepare workspace
+
+1. Clone this repository:
+
+```
+git clone https://github.com/turkenh/ansible-parse.git
+```
+
+2. Get submodules
+
+```
+cd ansible-parse
+git submodule init 
+git submodule update
+```
+
+3. Install dependencies
+
+```
+ansible-galaxy install -r requirements.yml
+```
 
 ## Step 1 - Create Instance 
 
